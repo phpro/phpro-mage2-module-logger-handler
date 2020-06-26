@@ -1,0 +1,51 @@
+{
+  "name": "phpro/mage2-module-logger-handler",
+  "description": "This module allows you to easily configure custom log files",
+  "type": "magento2-module",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "PHPro NV",
+      "email": "info@phpro.be",
+      "homepage": "https://www.phpro.be/"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "magento/framework": "^100.1.7|^101.0.1|^102.0"
+  },
+  "require-dev": {
+    "magento/marketplace-eqp": "^1.0",
+    "phpro/grumphp": "^0.14"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phpro\\LoggerHandler\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/magento/marketplace-eqp"
+    }
+  ],
+  "config": {
+    "platform": {
+      "ext-gd": "7.1",
+      "ext-mcrypt": "7.1",
+      "ext-itl": "7.1",
+      "ext-xsl": "7.1",
+      "ext-bcmath": "7.1",
+      "ext-pdo_mysql": "7.1",
+      "ext-soap": "7.1",
+      "ext-zip": "7.1"
+    }
+  }
+}
