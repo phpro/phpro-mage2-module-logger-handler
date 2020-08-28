@@ -12,7 +12,7 @@
   ],
   "require": {
     "php": "^7.0",
-    "magento/framework": "^100.1.7|^101.0.1|^102.0"
+    "magento/framework": "^100.1.7|^101.0.1|^102.0|^103.0"
   },
   "require-dev": {
     "magento/marketplace-eqp": "^1.0",
