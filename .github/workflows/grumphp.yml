@@ -4,6 +4,17 @@ jobs:
   build:
     name: Checking coding standards
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version:
+          - "7.3"
+          - "7.4"
+          - "8.0"
+          - "8.1"
+        dependencies:
+          - "lowest"
+          - "highest"
     steps:
       - uses: actions/checkout@v2
       - name: Get Composer Cache Directory
