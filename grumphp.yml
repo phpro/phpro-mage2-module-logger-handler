@@ -1,7 +1,7 @@
 grumphp:
     tasks:
         phpcs:
-            standard: PSR2
+            standard: PSR2,Magento2
             warning_severity: 5
             ignore_patterns:
                 - "Test/Unit"
