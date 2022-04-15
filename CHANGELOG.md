@@ -1,4 +1,8 @@
 # Changelog 
+## [4.0.0]
+### Added
+- Magento 2.4.4 compatibility
+
 ## [3.0.0]
 ### Added
 - Magento 2.4.0 compatibility

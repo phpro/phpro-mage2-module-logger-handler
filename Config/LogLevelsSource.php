@@ -3,10 +3,10 @@ declare(strict_types = 1);
 
 namespace Phpro\LoggerHandler\Config;
 
-use Magento\Framework\Option\ArrayInterface;
+use Magento\Framework\Data\OptionSourceInterface;
 use Psr\Log\LogLevel;
 
-class LogLevelsSource implements ArrayInterface
+class LogLevelsSource implements OptionSourceInterface
 {
     public function toOptionArray(): array
     {
