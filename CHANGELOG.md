@@ -1,4 +1,11 @@
 # Changelog 
+## [5.0.0]
+### Added
+- Compatibility with PHP 8.4: Use explicit nullable type
+
+### Removed
+- Drop support for PHP ^7.0
+
 ## [4.0.0]
 ### Added
 - Magento 2.4.4 compatibility
