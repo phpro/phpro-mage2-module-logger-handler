@@ -15,7 +15,7 @@ class Handler extends Base
     public function __construct(
         LogConfiguration $config,
         DriverInterface $filesystem,
-        string $filePath = null
+        ?string $filePath = null
     ) {
         $fileName = $config->getLogFileName();
         $this->loggerType = $config->getLogLevel();
