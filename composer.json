@@ -16,7 +16,7 @@
   },
   "require-dev": {
     "magento/magento-coding-standard": "*",
-    "phpro/grumphp-shim": "^1.5"
+    "phpro/grumphp-shim": "^2"
   },
   "autoload": {
     "psr-4": {
@@ -34,17 +34,17 @@
   ],
   "scripts": {
     "post-install-cmd": [
-      "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/,../../phpcompatibility/php-compatibility/PHPCompatibility)"
+      "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/,,../../magento/php-compatibility-fork)"
     ],
     "post-update-cmd": [
-      "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/,../../phpcompatibility/php-compatibility/PHPCompatibility)"
+      "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/,,../../magento/php-compatibility-fork)"
     ]
   },
   "config": {
     "allow-plugins": {
       "magento/composer-dependency-version-audit-plugin": true,
       "phpro/grumphp-shim": true,
-      "dealerdirect/phpcodesniffer-composer-installer": false
+      "dealerdirect/phpcodesniffer-composer-installer": true
     }
   }
 }
